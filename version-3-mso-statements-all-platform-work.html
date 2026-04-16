@@ -1,0 +1,70 @@
+<!--
+  FIXED: Works on iPhone 12 Pro Max iOS 14, iPhone 13/14 series iOS 15/16
+  Solution: Use hybrid/sponge approach instead of display:block on <td>
+-->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Target iOS Mail on newer iPhones — use max-width trick */
+    @media only screen and (max-width: 600px) {
+      .wrapper { width: 100% !important; }
+      .column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+    }
+  </style>
+</head>
+
+<!--[if mso]>
+<table role="presentation" width="600" cellspacing="0" cellpadding="0" align="center"><tr>
+<![endif]-->
+
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" class="wrapper">
+  <tr>
+
+    <!-- LEFT -->
+    <!--[if mso]><td width="300" valign="top" bgcolor="orange"><![endif]-->
+    <table
+      role="presentation"
+      class="column"
+      width="300"
+      cellspacing="0"
+      cellpadding="0"
+      align="left"
+      style="display:inline-block; vertical-align:top; width:100%; max-width:300px; background-color:orange;"
+    >
+      <tr>
+        <td style="padding:10px; font-size:14px; font-family:Arial,sans-serif;">
+          Left content
+        </td>
+      </tr>
+    </table>
+    <!--[if mso]></td><![endif]-->
+
+    <!-- RIGHT -->
+    <!--[if mso]><td width="300" valign="top" bgcolor="red"><![endif]-->
+    <table
+      role="presentation"
+      class="column"
+      width="300"
+      cellspacing="0"
+      cellpadding="0"
+      align="left"
+      style="display:inline-block; vertical-align:top; width:100%; max-width:300px; background-color:red;"
+    >
+      <tr>
+        <td style="padding:10px; font-size:14px; font-family:Arial,sans-serif;">
+          Right content
+        </td>
+      </tr>
+    </table>
+    <!--[if mso]></td><![endif]-->
+
+  </tr>
+</table>
+
+<!--[if mso]></tr></table><![endif]-->
