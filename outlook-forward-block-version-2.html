@@ -1,0 +1,110 @@
+<!-- ========================= -->
+<!-- DESKTOP VERSION -->
+<!-- ========================= -->
+<style>
+@media only screen and (max-width:480px){
+
+  .desktop-only{
+    display:none !important;
+    max-height:0 !important;
+    overflow:hidden !important;
+  }
+
+  .mobile-only{
+    display:block !important;
+    max-height:none !important;
+    overflow:visible !important;
+    width:auto !important;
+    opacity:1 !important;
+    font-size:inherit !important;
+    line-height:inherit !important;
+  }
+
+}
+</style>
+<tr class="desktop-only">
+  <td style="padding:0;">
+    <table width="100%" role="presentation" style="border-collapse:collapse;">
+      <tr>
+        <td style="padding:0 36px;">
+
+          <table width="100%" role="presentation" style="border-collapse:collapse;">
+            <tr>
+
+              <!-- COLUMN ONE -->
+              <td width="50%" bgcolor="orange"
+                  style="width:50%; padding:20px; vertical-align:top;">
+                <p style="margin:0; font-size:13px; color:#00174f; line-height:16px;">
+                  testing vibes
+                </p>
+              </td>
+
+              <!-- COLUMN TWO -->
+              <td width="50%" bgcolor="red"
+                  style="width:50%; padding:20px; vertical-align:top;">
+                <p style="margin:0; font-size:13px; color:#00174f; line-height:16px;">
+                  testing vibes 2
+                </p>
+              </td>
+
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+
+<!-- ========================= -->
+<!-- MOBILE VERSION (SAFE) -->
+<!-- ========================= -->
+
+<tr>
+  <td style="padding:0;">
+
+    <!--[if !mso]><!-- -->
+    <div class="mobile-only"
+         style="display:none; mso-hide:all; max-height:0; overflow:hidden; font-size:0; line-height:0; width:0; opacity:0;">
+
+      <table width="100%" role="presentation" style="border-collapse:collapse;">
+        <tr>
+          <td style="padding:0 36px;">
+
+            <!-- STACKED COLUMN 1 -->
+            <table width="100%" role="presentation" style="border-collapse:collapse;">
+              <tr>
+                <td bgcolor="orange" style="padding:20px;">
+                  <p style="margin:0; font-size:13px; color:#00174f; line-height:16px;">
+                    testing vibes
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <!-- spacer -->
+            <table width="100%" role="presentation">
+              <tr><td height="10"></td></tr>
+            </table>
+
+            <!-- STACKED COLUMN 2 -->
+            <table width="100%" role="presentation" style="border-collapse:collapse;">
+              <tr>
+                <td bgcolor="red" style="padding:20px;">
+                  <p style="margin:0; font-size:13px; color:#00174f; line-height:16px;">
+                    testing vibes 2
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+    </div>
+    <!--<![endif]-->
+
+  </td>
+</tr>
